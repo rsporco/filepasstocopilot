@@ -1,0 +1,98 @@
+Run pio run -e esp32s3_8mb_psram_m_boya
+  pio run -e esp32s3_8mb_psram_m_boya
+  shell: /usr/bin/bash -e {0}
+  env:
+    pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+    PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+    Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+    Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+    Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+    LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+    WLED_RELEASE: true
+    WLED_NIGHTLY_BUILD: false
+********************************************************************************
+If you like PlatformIO, please:
+- star it on GitHub > https://github.com/platformio/platformio-core
+- follow us on LinkedIn to stay up-to-date on the latest project news > https://www.linkedin.com/company/platformio/
+- try PlatformIO IDE for embedded development > https://platformio.org/platformio-ide
+********************************************************************************
+
+Processing esp32s3_8mb_psram_m_boya (platform: espressif32; framework: arduino, espidf; board: esp32-s3-devkitc-1)
+--------------------------------------------------------------------------------
+Platform Manager: Installing espressif32
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Platform Manager: espressif32@6.12.0 has been installed!
+Tool Manager: Installing espressif/toolchain-xtensa-esp32s3 @ 8.4.0+2021r2-patch5
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: toolchain-xtensa-esp32s3@8.4.0+2021r2-patch5 has been installed!
+Tool Manager: Installing espressif/toolchain-riscv32-esp @ 8.4.0+2021r2-patch5
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: toolchain-riscv32-esp@8.4.0+2021r2-patch5 has been installed!
+Tool Manager: Installing platformio/toolchain-esp32ulp @ ~1.23800.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: toolchain-esp32ulp@1.23800.240113 has been installed!
+Tool Manager: Installing platformio/framework-arduinoespressif32 @ ~3.20017.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: framework-arduinoespressif32@3.20017.241212+sha.dcc1105b has been installed!
+Tool Manager: Installing platformio/framework-espidf @ ~3.40407.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: framework-espidf@3.40407.240606 has been installed!
+Tool Manager: Installing platformio/tool-esptoolpy @ ~2.40900.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Collecting cryptography~=45.0.3
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/runner/.platformio/packages/toolchain-xtensa-esp32s3/bin/xtensa-esp32s3-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/runner/.platformio/packages/toolchain-xtensa-esp32s3/bin/xtensa-esp32s3-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/runner/work/WLED-MM/WLED-MM/sdkconfig.esp32s3_8mb_psram_m_boya
+-- Found Python3: /opt/hostedtoolcache/Python/3.9.25/x64/bin/python3.9 (found version "3.9.25") found components: Interpreter
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "WLED-MM" version: cd72f9b
+-- Adding linker script /home/runner/work/WLED-MM/WLED-MM/.pio/build/esp32s3_8mb_psram_m_boya/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/runner/.platformio/packages/framework-espidf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/runner/.platformio/packages/framework-espidf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/runner/.platformio/packages/framework-espidf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/runner/.platformio/packages/framework-espidf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/runner/.platformio/packages/framework-espidf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/runner/.platformio/packages/framework-espidf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/runner/.platformio/packages/framework-espidf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib-time.ld
+-- Adding linker script /home/runner/.platformio/packages/framework-espidf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Configuring incomplete, errors occurred!
+
+fatal: not a git repository (or any of the parent directories): .git
+CMake Deprecation Warning at /home/runner/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/CMakeLists.txt:23 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository: /home/runner/.platformio/packages/framework-espidf/components/openthread/openthread/../../../.git/modules/components/openthread/openthread
+CMake Error at /home/runner/.platformio/packages/framework-arduinoespressif32/CMakeLists.txt:218 (message):
+  esp32-arduino requires CONFIG_FREERTOS_HZ=1000 (currently 100)
+
+
+
+========================= [FAILED] Took 97.58 seconds =========================
+
+Environment               Status    Duration
+------------------------  --------  ------------
+esp32s3_8mb_psram_m_boya  FAILED    00:01:37.580
+==================== 1 failed, 0 succeeded in 00:01:37.580 ====================
+Error: Process completed with exit code 1.
